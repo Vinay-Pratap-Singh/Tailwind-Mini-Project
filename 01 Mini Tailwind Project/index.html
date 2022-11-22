@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+
+    <!-- adding the font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- adding the tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- creating the container for card -->
+    <div class="w-full h-[100vh] flex items-center justify-center bg-gray-300">
+      <!-- creating the card -->
+      <div
+        class="relative w-80 rounded-lg p-4 bg-gray-200 flex flex-col items-center justify-center gap-4 shadow-[3px_3px_3px_gray,-3px_-3px_3px_white] text-gray-500"
+      >
+        <i
+          class="fa-solid fa-arrow-left-long absolute top-4 left-6 text-lg cursor-pointer"
+        ></i>
+        <i
+          class="fa-solid fa-ellipsis-vertical absolute top-4 right-6 text-lg cursor-pointer"
+        ></i>
+
+        <!-- user details -->
+        <div class="flex flex-col items-center justify-center gap-2 mt-4">
+          <img
+            class="rounded-[50%] border border-gray-200 border-8 w-36 h-36 shadow-[2px_2px_2px_gray,-2px_-2px_2px_white]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQiaiACJSLwfB7MsbDW80YFElBmlV2dqJDwg&usqp=CAU"
+            alt="main image"
+          />
+          <h1 class="text-2xl font-bold text-gray-700">Hitesh Choudhary</h1>
+          <p class="text-xl font-semibold">Mentor and Entrepreneur</p>
+        </div>
+
+        <!-- adding social media links -->
+        <div class="flex gap-4">
+          <i
+            class="fa-brands fa-facebook-f py-3 px-4 rounded-[50%] shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] text-blue-800 font-bold cursor-pointer hover:scale-[1.1] transition-all"
+          ></i>
+          <i
+            class="fa-brands fa-twitter py-3 px-3 rounded-[50%] shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] text-cyan-600 font-bold cursor-pointer hover:scale-[1.1] transition-all"
+          ></i>
+          <i
+            class="fa-brands fa-instagram py-3 px-3 rounded-[50%] shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] text-pink-600 font-bold cursor-pointer hover:scale-[1.1] transition-all"
+          ></i>
+          <i
+            class="fa-brands fa-youtube py-3 px-[10px] rounded-[50%] shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] text-red-600 font-bold cursor-pointer hover:scale-[1.1] transition-all"
+          ></i>
+        </div>
+
+        <!-- buttons -->
+        <div>
+          <button
+            class="px-8 py-2 shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] font-bold rounded-lg hover:scale-[1.1] transition-all mr-4"
+          >
+            Message
+          </button>
+          <button
+            class="px-8 py-2 shadow-[2px_2px_2px_gray,-2px_-2px_2px_white] font-bold rounded-lg hover:scale-[1.1] transition-all"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <!-- post details -->
+        <div class="flex items-center">
+          <div class="flex items-center gap-2 font-bold px-4 border-2 border-r-gray-400">
+            <i class="fa-regular fa-heart"></i>
+            <p>50.5k</p>
+          </div>
+
+          <div class="flex items-center gap-2 font-bold px-4 border-2 border-r-gray-400">
+            <i class="fa-regular fa-message"></i>
+            <p>10.6k</p>
+          </div>
+
+          <div class="flex items-center gap-2 font-bold px-4 border-2">
+            <i class="fa-solid fa-share"></i>
+            <p>6.25k</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
