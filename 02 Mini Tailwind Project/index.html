@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycle Store</title>
+
+    <!-- adding the font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- adding the tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="h-[100vh] w-[100vw] bg-[#262525] text-white">
+    <!-- creating the navigation menu -->
+    <nav class="flex items-center justify-center gap-40 mx-28 p-5 font-semibold">
+      <ul class="flex items-center gap-14">
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li class="text-[#C25E0F]">STORE</li>
+        <li>CONTACT</li>
+      </ul>
+
+      <i class="fa-solid fa-cart-shopping text-xl"></i>
+    </nav>
+
+    <!-- creating the main body -->
+    <main class="flex flex-wrap items-center justify-center mx-32">
+        <!-- div for color patch -->
+        <div class="absolute z-[-1] top-0 right-0 bg-[#4C2B1F] w-[700px] h-80 blur-[100px]"></div>
+        <div class="absolute z-[-1] bottom-0 left-0 bg-[#4C2B1F] w-[700px] h-80 blur-[200px]"></div>
+
+      <!-- creating the cycle card -->
+      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] mr-8 mb-4">
+        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img1.png" alt="img1" />
+
+        <!-- displaying the cycle details -->
+        <div class="bg-[#BD906A] rounded-xl p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-bold">STRAVARDO</h2>
+            <p class="text-lg font-bold mr-4">$460</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <p class="text-[12px]">24 Speed Gears</p>
+            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- creating the cycle card -->
+      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] ml-8 mb-4">
+        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img2.png" alt="img2" />
+
+        <!-- displaying the cycle details -->
+        <div class="bg-[#BD906A] rounded-xl p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-bold">STRAVARDO</h2>
+            <p class="text-lg font-bold mr-4">$460</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <p class="text-[12px]">24 Speed Gears</p>
+            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- creating the cycle card -->
+      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] mr-8 mb-4">
+        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img3.png" alt="img1" />
+
+        <!-- displaying the cycle details -->
+        <div class="bg-[#BD906A] rounded-xl p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-bold">STRAVARDO</h2>
+            <p class="text-lg font-bold mr-4">$460</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <p class="text-[12px]">24 Speed Gears</p>
+            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- creating the cycle card -->
+      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] ml-8 mb-4">
+        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img4.png" alt="img1" />
+
+        <!-- displaying the cycle details -->
+        <div class="bg-[#BD906A] rounded-xl p-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-bold">STRAVARDO</h2>
+            <p class="text-lg font-bold mr-4">$460</p>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <p class="text-[12px]">24 Speed Gears</p>
+            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
