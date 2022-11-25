@@ -19,9 +19,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="h-[100vh] w-[100vw] bg-[#262525] text-white">
+  <body
+    class="h-[100vh] bg-[#262525] text-white flex flex-col items-center justify-center"
+  >
     <!-- creating the navigation menu -->
-    <nav class="flex items-center justify-center gap-40 mx-28 p-5 font-semibold">
+    <nav
+      class="flex items-center justify-center gap-40 mx-28 p-5 font-semibold h-[10vh]"
+    >
       <ul class="flex items-center gap-14">
         <li>HOME</li>
         <li>ABOUT</li>
@@ -32,80 +36,130 @@
       <i class="fa-solid fa-cart-shopping text-xl"></i>
     </nav>
 
+    <!-- div for color patch -->
+    <div
+      class="absolute z-[-1] top-0 right-0 bg-[#4C2B1F] w-[700px] h-80 blur-[100px]"
+    ></div>
+    <div
+      class="absolute z-[-1] bottom-0 left-0 bg-[#4C2B1F] w-[700px] h-80 blur-[200px]"
+    ></div>
+
     <!-- creating the main body -->
-    <main class="flex flex-wrap items-center justify-center mx-32">
-        <!-- div for color patch -->
-        <div class="absolute z-[-1] top-0 right-0 bg-[#4C2B1F] w-[700px] h-80 blur-[100px]"></div>
-        <div class="absolute z-[-1] bottom-0 left-0 bg-[#4C2B1F] w-[700px] h-80 blur-[200px]"></div>
-
+    <main class="grid grid-cols-2 w-[80vw] grid-rows-2 h-[90vh]">
       <!-- creating the cycle card -->
-      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] mr-8 mb-4">
-        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img1.png" alt="img1" />
+      <div
+        class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-4 rounded-xl w-[100%] mr-8 mb-4 col-start-1 col-end-2 row-start-1 row-end-2"
+      >
+        <img
+          class="w-auto h-[70%] mb-[1%] ml-[10%]"
+          src="./images/img1.png"
+          alt="img1"
+        />
 
         <!-- displaying the cycle details -->
-        <div class="bg-[#BD906A] rounded-xl p-4">
-          <div class="flex items-center justify-between">
+        <div
+          class="flex flex-col items-center justify-center gap-2 bg-[#BD906A] rounded-xl p-2 h-[30%]"
+        >
+          <div class="w-full flex items-center justify-between">
             <h2 class="text-lg font-bold">STRAVARDO</h2>
             <p class="text-lg font-bold mr-4">$460</p>
           </div>
 
-          <div class="flex items-center justify-between">
+          <div class="w-full flex items-center justify-between">
             <p class="text-[12px]">24 Speed Gears</p>
-            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+            <button
+              class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
 
       <!-- creating the cycle card -->
-      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] ml-8 mb-4">
-        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img2.png" alt="img2" />
+      <div
+        class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-4 rounded-xl w-[100%] ml-8 mb-4 col-start-2 col-end-3 row-start-1 row-end-2"
+      >
+        <img
+          class="w-auto h-[70%] mb-[1%] ml-[10%]"
+          src="./images/img2.png"
+          alt="img2"
+        />
 
         <!-- displaying the cycle details -->
-        <div class="bg-[#BD906A] rounded-xl p-4">
-          <div class="flex items-center justify-between">
+        <div
+          class="flex flex-col items-center justify-center gap-2 bg-[#BD906A] rounded-xl p-2 h-[30%]"
+        >
+          <div class="w-full flex items-center justify-between">
             <h2 class="text-lg font-bold">STRAVARDO</h2>
             <p class="text-lg font-bold mr-4">$460</p>
           </div>
 
-          <div class="flex items-center justify-between">
+          <div class="w-full flex items-center justify-between">
             <p class="text-[12px]">24 Speed Gears</p>
-            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+            <button
+              class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
 
       <!-- creating the cycle card -->
-      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] mr-8 mb-4">
-        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img3.png" alt="img1" />
+      <div
+        class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-4 rounded-xl w-[100%] mr-8 mb-4 col-start-1 col-end-2 row-start-2 row-end-3"
+      >
+        <img
+          class="w-auto h-[70%] mb-[1%] ml-[10%]"
+          src="./images/img3.png"
+          alt="img1"
+        />
 
         <!-- displaying the cycle details -->
-        <div class="bg-[#BD906A] rounded-xl p-4">
-          <div class="flex items-center justify-between">
+        <div
+          class="flex flex-col items-center justify-center gap-2 bg-[#BD906A] rounded-xl p-2 h-[30%]"
+        >
+          <div class="w-full flex items-center justify-between">
             <h2 class="text-lg font-bold">STRAVARDO</h2>
             <p class="text-lg font-bold mr-4">$460</p>
           </div>
 
-          <div class="flex items-center justify-between">
+          <div class="w-full flex items-center justify-between">
             <p class="text-[12px]">24 Speed Gears</p>
-            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+            <button
+              class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
 
       <!-- creating the cycle card -->
-      <div class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-2 rounded-xl w-[320px] ml-8 mb-4">
-        <img class="w-[250px] h-[140px] mb-2 ml-4" src="./images/img4.png" alt="img1" />
+      <div
+        class="bg-gradient-to-b from-[#C25E0F] to-[#854B18] px-4 py-4 rounded-xl w-[100%] ml-8 mb-4 col-start-2 col-end-3 row-start-2 row-end-3"
+      >
+        <img
+          class="w-auto h-[70%] mb-[1%] ml-[10%]"
+          src="./images/img4.png"
+          alt="img1"
+        />
 
         <!-- displaying the cycle details -->
-        <div class="bg-[#BD906A] rounded-xl p-4">
-          <div class="flex items-center justify-between">
+        <div class="flex flex-col items-center justify-center gap-2 bg-[#BD906A] rounded-xl p-2 h-[30%]">
+          <div class="w-full flex items-center justify-between">
             <h2 class="text-lg font-bold">STRAVARDO</h2>
             <p class="text-lg font-bold mr-4">$460</p>
           </div>
 
-          <div class="flex items-center justify-between">
+          <div class="w-full flex items-center justify-between">
             <p class="text-[12px]">24 Speed Gears</p>
-            <button class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]">Add to Cart</button>
+            <button
+              class="px-2 text-[12px] border border-[#C25E0F] rounded-xl bg-[#CCAE98]"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
