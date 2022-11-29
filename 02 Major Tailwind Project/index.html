@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+
+    <!-- adding the google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding the tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- adding the css file -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+
+  <body>
+    <!-- creating the navigation menu -->
+    <nav class="flex items-center justify-evenly py-6">
+      <img class="w-36" src="./images/logo.png" alt="log" />
+
+      <ul class="flex items-center gap-10 text-base font-medium">
+        <li>Menu</li>
+        <li>Events</li>
+        <li>Gallery</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <button
+        class="bg-[#EA6D27] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg"
+      >
+        Book a table
+      </button>
+    </nav>
+
+    <!-- creating the hero section -->
+    <section class="flex items-center mx-[10%] mb-[10%]">
+      <!-- for left hero section -->
+      <div class="w-[50%] ml-10">
+        <div class="w-[45rem] h-[45rem] border border-gray-300 rounded-full absolute -top-[70%] -left-[22%]"></div>
+        <div class="w-[40rem] h-[45rem] border border-gray-300 rounded-full absolute -top-[75%] -left-[22%]"></div>
+        <div class="w-[45rem] h-[42rem] border border-gray-300 rounded-full absolute -top-[75%] -left-[22%]"></div>
+        <!-- content -->
+        <img
+          class="w-[5rem] relative -left-16 bottom-10"
+          src="./icons/foodDelicious.png"
+          alt="food"
+        />
+        <h1 class="text-4xl font-semibold w-80">
+          We provide the best food for you
+        </h1>
+        <p class="text-sm py-10 w-80">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <!-- for both buttons -->
+        <div class="flex items-center">
+          <button
+            class="bg-[#101A24] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm mr-6"
+          >
+            Menu
+          </button>
+          <button
+            class="bg-[#EA6D27] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm"
+          >
+            Book a table
+          </button>
+        </div>
+
+        <!-- for social media icons -->
+        <div class="flex items-center mt-16">
+          <img
+            class="border-black border rounded-full px-1 py-1 mr-6 w-8"
+            src="./icons/facebook.png"
+            alt="facebook"
+          />
+          <img
+            class="border-black border rounded-full px-1 py-1 mr-6 w-8"
+            src="./icons/instagram.png"
+            alt="instagram"
+          />
+          <img
+            class="border-black border rounded-full px-1 py-1 mr-6 w-8"
+            src="./icons/twitter.png"
+            alt="twitter"
+          />
+
+          <!-- div for creating the line -->
+          <div class="w-20 h-[1px] bg-black"></div>
+        </div>
+      </div>
+
+      <!-- for right hero section -->
+      <div class="w-[50%] relative mt-[10%]">
+        <img
+          class="w-[55%] absolute -top-10 -left-28 opacity-20"
+          src="./icons/mainLeaf1.png"
+          alt="mainLeaf1"
+        />
+        <img
+          class="w-[38%] absolute -top-[5rem] right-16 opacity-20"
+          src="./icons/mainleaf2.png"
+          alt="mainleaf2"
+        />
+        <img
+          class="w-[35%] absolute right-10 bottom-2 opacity-20"
+          src="./icons/mainleaf3.png"
+          alt="mainleaf3"
+        />
+        <img
+          class="w-[70%] rounded-tl-[60px] rounded-tr-[30px] rounded-bl-[30px] rounded-br-[70px] relative z-10"
+          src="./images/heroimg.png"
+          alt="heroimg"
+        />
+        <img
+          class="w-[40%] absolute bottom-5 -left-28 z-20"
+          src="./images/dish.png"
+          alt="dish"
+        />
+      </div>
+    </section>
+
+    <!-- special dish section -->
+    <section
+      class="bg-[#F3F4F4] py-20 flex flex-col items-center justify-center"
+    >
+      <!-- creating the top section of special dish -->
+      <div
+        class="relative w-[30%] text-center flex flex-col items-center justify-center"
+      >
+        <img
+          class="w-[35%] opacity-10 absolute -left-24 -top-5"
+          src="./icons/mainleaf2.png"
+          alt="mainleaf2"
+        />
+        <h1 class="text-4xl font-bold">Our Special Dishes</h1>
+        <p class="text-xs my-6 w-[80%]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </p>
+        <img
+          class="w-[30%] opacity-10 absolute -rotate-12 -top-10 -right-20"
+          src="./icons/mainleaf3.png"
+          alt="mainleaf3"
+        />
+      </div>
+
+      <!-- special dishes card section -->
+      <section
+        class="mt-[10%] flex items-center justify-center gap-10 text-center relative z-20"
+      >
+        <!-- creating the card of special dishes -->
+        <div
+          class="flex flex-col items-center justify-center bg-white w-[250px] h-72 relative rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl"
+        >
+          <img
+            class="w-[80%] m-auto absolute -top-[75px]"
+            src="./images/specialDish1.png"
+            alt="specialDish1"
+          />
+          <div class="absolute bottom-0 px-4 mb-6">
+            <p
+              class="bg-black w-fit text-white text-xs p-3 rounded-full absolute -top-48 right-2"
+            >
+              $12
+            </p>
+            <h3 class="text-sm mb-5 font-bold">Lumpia with Suace</h3>
+            <p class="text-xs mb-5">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+        </div>
+
+        <!-- creating the card of special dishes -->
+        <div
+          class="flex flex-col items-center justify-center border-2 border-white w-[250px] h-72 relative rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl"
+        >
+          <img
+            class="w-[80%] m-auto absolute -top-[75px]"
+            src="./images/specialDish2.png"
+            alt="specialDish2"
+          />
+          <div class="absolute bottom-0 px-4 mb-6">
+            <p
+              class="bg-black w-fit text-white text-xs p-3 rounded-full absolute -top-48 right-2"
+            >
+              $12
+            </p>
+            <h3 class="text-sm mb-5 font-bold">Fish and Veggie</h3>
+            <p class="text-xs mb-5">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+        </div>
+
+        <!-- creating the card of special dishes -->
+        <div
+          class="flex flex-col items-center justify-center border-2 border-white w-[250px] h-72 relative rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl"
+        >
+          <img
+            class="w-[80%] m-auto absolute -top-[75px]"
+            src="./images/specialDish3.png"
+            alt="specialDish3"
+          />
+          <div class="absolute bottom-0 px-4 mb-6">
+            <p
+              class="bg-black w-fit text-white text-xs p-3 rounded-full absolute -top-48 right-2"
+            >
+              $12
+            </p>
+            <h3 class="text-sm mb-5 font-bold">Tofu Chili</h3>
+            <p class="text-xs mb-5">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+        </div>
+
+        <!-- creating the card of special dishes -->
+        <div
+          class="flex flex-col items-center justify-center border-2 border-white w-[250px] h-72 relative rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl"
+        >
+          <img
+            class="w-[80%] m-auto absolute -top-[75px]"
+            src="./images/specialDish4.png"
+            alt="specialDish4"
+          />
+          <div class="absolute bottom-0 px-4 mb-6">
+            <p
+              class="bg-black w-fit text-white text-xs p-3 rounded-full absolute -top-48 right-2"
+            >
+              $12
+            </p>
+            <h3 class="text-sm mb-5 font-bold">Egg and Cocumber</h3>
+            <p class="text-xs mb-5">
+              Lorem ipsum dolor sit , consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- welcome section of special dish -->
+      <div class="flex items-center justify-center relative py-40 w-full">
+        <img
+          class="w-16 opacity-20 absolute -top-[5%] left-[20%]"
+          src="./icons/onion.png"
+          alt="onion"
+        />
+        <img
+          class="w-16 opacity-20 absolute -top-[4%] right-[15%]"
+          src="./icons/garlicPiece.png"
+          alt="garlicPiece"
+        />
+        <img
+          class="w-20 opacity-20 absolute -top-[8%] right-[5%]"
+          src="./icons/gralic.png"
+          alt="gralic"
+        />
+        <img
+          class="w-44 opacity-20 absolute top-[5%]"
+          src="./icons/welcomeGrass1.png"
+          alt="welcomeGrass1"
+        />
+        <img
+          class="w-[16%] opacity-20 absolute right-0 bottom-[20%]"
+          src="./icons/welcomeGrass2.png"
+          alt="welcomeGrass2"
+        />
+
+        <!-- left section for special dish image -->
+        <div class="w-1/2 relative flex items-center justify-center">
+          <img class="w-[70%]" src="./images/dish.png" alt="dish" />
+          <img
+            class="w-14 absolute left-[20%]"
+            src="./icons/leaf-1.png"
+            alt="leaf-1"
+          />
+          <img
+            class="w-28 absolute bottom-[10%] left-[25%]"
+            src="./icons/leaf-2.png"
+            alt="leaf-2"
+          />
+          <img
+            class="w-28 absolute right-[15%] top-[20%]"
+            src="./icons/leaf-3.png"
+            alt="leaf-3"
+          />
+          <img
+            class="w-12 absolute bottom-[8%]"
+            src="./icons/leaf-4.png"
+            alt="leaf-4"
+          />
+        </div>
+
+        <!-- right section for welcome text -->
+        <div class="w-1/2 relative">
+          <img
+            class="w-36 opacity-20 absolute -top-[30%] -left-12"
+            src="./icons/mainLeaf2.png"
+            alt="mainLeaf2"
+          />
+          <h1 class="w-80 text-4xl font-semibold">Wecome to Our Restaurant</h1>
+          <p class="w-80 text-sm py-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <!-- for both buttons -->
+          <div class="flex items-center">
+            <button
+              class="bg-[#101A24] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm mr-6"
+            >
+              Menu
+            </button>
+            <button
+              class="bg-[#EA6D27] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm"
+            >
+              Book a table
+            </button>
+          </div>
+
+          <img
+            class="w-14 opacity-20 absolute bottom-0 -left-[15%]"
+            src="./icons/garlicPiece.png"
+            alt="garlicPiece"
+          />
+          <img
+            class="w-14 opacity-20 rotate-90 absolute -bottom-[35%]"
+            src="./icons/garlicPiece.png"
+            alt="garlicPiece"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- expert chef section -->
+    <section class="relative">
+      <img
+        class="absolute opacity-20 w-28 -left-16"
+        src="./icons/garlicPiece.png"
+        alt="garlicPiece"
+      />
+      <img
+        class="absolute opacity-20 w-44 left-[5%] bottom-[75%]"
+        src="./icons/gralic.png"
+        alt="garlic"
+      />
+
+      <!-- chef details and image section -->
+      <div class="flex items-center justify-center my-32">
+        <!-- left section for chef details -->
+        <div class="w-1/2 pl-[10%] flex flex-col gap-10">
+          <h1 class="text-4xl font-semibold">Our Expert Chef</h1>
+          <p class="text-sm w-96">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <!-- grid for chef features -->
+          <div class="grid grid-cols-2 gap-8">
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+              <img src="./icons/check.png" alt="check" />
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+          </div>
+
+          <!-- for both buttons -->
+          <div class="flex items-center self-center">
+            <button
+              class="bg-[#101A24] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm mr-6"
+            >
+              Menu
+            </button>
+            <button
+              class="bg-[#EA6D27] text-white px-4 py-2 rounded-tl-xl rounded-br-xl shadow-gray-400 shadow-lg text-sm"
+            >
+              Book a table
+            </button>
+          </div>
+        </div>
+
+        <!-- for chef image -->
+        <div class="w-1/2 pl-[10%]">
+          <img class="w-[70%]" src="./images/chef.png" alt="chef" />
+        </div>
+      </div>
+    </section>
+
+    <!-- customer testimonial and newsletter section-->
+    <section class="relative bg-[#F3F4F4] py-[8%]">
+      <img class="absolute left-0 w-[30%]" src="./icons/pan.png" alt="pan" />
+      <!-- testimonial header -->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-3xl font-semibold">Our Happy Customers</h1>
+        <p class="text-sm w-96 text-center py-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt
+        </p>
+
+        <!-- card section for user testimonial -->
+        <section
+          class="flex items-center justify-center gap-20 relative w-full mt-20"
+        >
+          <!-- creating the testimonial card -->
+          <div
+            class="flex flex-col items-center justify-center bg-white w-[400px] px-10 rounded-tl-[50px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[50px]"
+          >
+            <!-- customer image -->
+            <img
+              class="rounded-full absolute -top-14"
+              src="./images/customer1.png"
+              alt="customer1"
+            />
+            <!-- for handling the stars -->
+            <div class="flex items-center gap-2 pt-20">
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+            </div>
+
+            <p class="text-xs my-5">
+              Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+              sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+              cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu
+              aliquam quis. Ornare tincidunt tempus semper
+            </p>
+            <h4 class="text-sm font-bold">Ama Ampomah</h4>
+            <p class="text-xs text-gray-500 mb-5">CEO & Founder Inc</p>
+          </div>
+
+          <!-- creating the testimonial card -->
+          <div
+            class="flex flex-col items-center justify-center bg-white w-[400px] px-10 rounded-tl-[50px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[50px]"
+          >
+            <!-- customer image -->
+            <img
+              class="rounded-full absolute -top-14"
+              src="./images/customer2.png"
+              alt="customer2"
+            />
+            <!-- for handling the stars -->
+            <div class="flex items-center gap-2 pt-20">
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+              <img src="./icons/star.png" alt="star" />
+            </div>
+
+            <p class="text-xs my-5">
+              Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam
+              sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in
+              cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu
+              aliquam quis. Ornare tincidunt tempus semper
+            </p>
+            <h4 class="text-sm font-bold">Kweku Annan</h4>
+            <p class="text-xs text-gray-500 mb-5">CEO & Founder Inc</p>
+          </div>
+        </section>
+
+        <!-- creating the dots -->
+        <div class="my-20 flex items-center gap-4">
+          <p class="w-2 h-2 bg-gray-400 rounded-full"></p>
+          <p class="w-2 h-2 bg-red-400 rounded-full"></p>
+          <p class="w-2 h-2 bg-gray-400 rounded-full"></p>
+          <p class="w-2 h-2 bg-gray-400 rounded-full"></p>
+          <p class="w-2 h-2 bg-gray-400 rounded-full"></p>
+          <p class="w-2 h-2 bg-gray-400 rounded-full"></p>
+        </div>
+      </div>
+
+      <!-- creating the newsletter section -->
+      <div
+        class="bg-[url('./images/subscribeBG.png')] bg-no-repeat w-[80%] m-auto pt-24 pb-14 flex flex-col items-center justify-center text-white text-center rounded-3xl"
+      >
+        <h1 class="text-3xl w-[450px] font-semibold">
+          Get Our Promo Code by Subscribing To our Newsletter
+        </h1>
+        <!-- input box and subscribe button -->
+        <div class="mt-6 w-[450px] relative">
+          <input
+            class="py-4 px-2 rounded-2xl text-xs w-full"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <button
+            class="absolute right-4 top-[12%] bg-[#EA6D27] text-sm py-2 px-4 rounded-lg"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- creating the footer -->
+    <footer class="bg-[#F3F4F4] relative px-[10%]">
+      <img class="absolute w-[25%] -rotate-[90deg] -bottom-[30%] left-[40%] opacity-20" src="./icons/pan.png" alt="pan" />
+
+      <!-- creating the top footer menu -->
+      <div class="flex items-start justify-between text-xs text-gray-600">
+        <!-- logo and timing section -->
+        <div>
+          <img class="w-40" src="./images/logo.png" alt="log" />
+          <p class="py-6 w-[300px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore .Learn more
+          </p>
+
+          <p class="text-black font-bold">OPENING HOURS</p>
+
+          <!-- opening time grid -->
+          <div class="my-6 grid grid-cols-3 gap-x-6 gap-y-1">
+            <p>Monday - Friday</p>
+            <p>Saturday</p>
+            <p>Sunday</p>
+            <p>08:00 am to 09:00 pm</p>
+            <p>08:00 am to 09:00 pm</p>
+            <p>CLOSED</p>
+          </div>
+        </div>
+
+        <!-- menu navigation link -->
+        <ul class="flex flex-col gap-2">
+          <li class="font-bold text-black">NAVIGATION</li>
+          <li>Menu</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Main dishes</li>
+        </ul>
+
+        <!-- dishes navigation link -->
+        <ul class="flex flex-col gap-2">
+          <li class="font-bold text-black">DISHES</li>
+          <li>Fish & Veggies</li>
+          <li>Tofu Chill</li>
+          <li>Egg & Cocumber</li>
+          <li>Lumpia Sauce</li>
+        </ul>
+
+        <!-- for social media icons -->
+        <div>
+          <p class="font-bold text-black">FOLLOW US</p>
+          <div class="flex items-center mt-4">
+            <img
+              class="border-black border rounded-full px-1 py-1 mr-6 w-[28px] cursor-pointer"
+              src="./icons/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="border-black border rounded-full px-1 py-1 mr-6 w-[28px] cursor-pointer"
+              src="./icons/instagram.png"
+              alt="instagram"
+            />
+            <img
+              class="border-black border rounded-full px-1 py-1 mr-6 w-[28px] cursor-pointer"
+              src="./icons/twitter.png"
+              alt="twitter"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- creating the line -->
+      <hr>
+
+      <!-- creating the bottom section of footer -->
+      <div class="py-6 text-xs text-gray-600 flex justify-between">
+        <p>2022 Restaurants. All Right Reserved. Designed by <span class="text-black font-semibold">Harvi</span></p>
+        <div class="flex items-center gap-10">
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
