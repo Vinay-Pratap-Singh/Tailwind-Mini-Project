@@ -18,8 +18,8 @@
     }
   </style>
 
-  <body class="h-screen w-screen overflow-hidden">
-    <div class="grid grid-cols-[80px_300px_100%]">
+  <body class="h-screen w-screen max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-[80px_300px_auto] h-full">
       <!-- for left button options -->
       <ul class="w-full bg-[#eaf1fb] space-y-5">
         <!-- for menu button -->
@@ -181,13 +181,13 @@
 
           <!-- for starred -->
           <li
-            class="w-full flex items-center gap-5 font-semibold transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
+            class="w-full flex items-center gap-5 transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke="currentColor"
               class="w-5 h-5"
             >
@@ -203,13 +203,13 @@
 
           <!-- for snoozed -->
           <li
-            class="w-full flex items-center gap-5 font-semibold transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
+            class="w-full flex items-center gap-5 transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke="currentColor"
               class="w-5 h-5"
             >
@@ -224,13 +224,13 @@
 
           <!-- for sent -->
           <li
-            class="w-full flex items-center gap-5 font-semibold transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
+            class="w-full flex items-center gap-5 transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke="currentColor"
               class="w-5 h-5"
             >
@@ -245,13 +245,13 @@
 
           <!-- for draft -->
           <li
-            class="w-full flex items-center gap-5 font-semibold transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
+            class="w-full flex items-center gap-5 transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke="currentColor"
               class="w-5 h-5"
             >
@@ -266,13 +266,13 @@
 
           <!-- for more -->
           <li
-            class="w-full flex items-center gap-5 font-semibold transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
+            class="w-full flex items-center gap-5 transition-all duration-200 ease-in-out hover:bg-gray-200 px-5 rounded-2xl py-[1.5px] mb-1 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke="currentColor"
               class="w-5 h-5"
             >
@@ -355,7 +355,7 @@
       </div>
 
       <!-- complete mail section -->
-      <section class="bg-yellow-500">
+      <section class="bg-[#FFFFFF]">
         <!-- for navigation menu -->
         <header class="bg-[#F6F8FC] flex items-center gap-5 py-2">
           <!-- for search bar -->
@@ -503,20 +503,150 @@
         </header>
 
         <!-- for displaying mails and right side menu options -->
-        <main>
+        <main class="grid grid-cols-[auto_50px] rounded-xl">
           <!-- for displaying the mails -->
-          <section>
-            <!-- for display mails header -->
-            <ul>
+          <section class="bg-white overflow-hidden">
+            <!-- for display mails header option buttons -->
+            <section class="px-5 flex items-center justify-between h-14">
+              <!-- mail header left section -->
+              <div class="flex items-center gap-4">
+                <!-- for checkbox -->
+                <div class="flex items-center gap-1">
+                  <input type="checkbox" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-3 h-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+
+                <!-- for refresh -->
+                <div
+                  class="p-2 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                    />
+                  </svg>
+                </div>
+
+                <!-- for vertical symbol (menu) -->
+                <div
+                  class="p-1 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- mail header right section -->
+              <div
+                class="flex items-center gap-4 text-xs font-semibold text-[#5B5B5B]"
+              >
+                <p>1-50 of 550</p>
+
+                <!-- for both caret arrows -->
+                <div
+                  class="p-2 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="p-2 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </div>
+
+                <!-- for keyboard -->
+                <div class="flex items-center gap-1">
+                  <div class="w-5 h-3 bg-gray-500"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </section>
+
+            <ul class="w-full h-14 flex items-center">
               <!-- for primary mail -->
-              <li>
+              <li
+                class="w-60 px-5 cursor-pointer flex items-center gap-4 h-full hover:bg-gray-100 text-[#0B57D0] relative"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  stroke-width="2"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -524,18 +654,24 @@
                     d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"
                   />
                 </svg>
-                <p>Primary</p>
+                <p class="font-semibold text-sm">Primary</p>
+                <!-- for blue line -->
+                <div
+                  class="absolute bottom-0 left-2 w-56 h-1 bg-[#0B57D0] rounded-full"
+                ></div>
               </li>
 
               <!-- for promotions mails -->
-              <li>
+              <li
+                class="w-60 px-5 cursor-pointer flex items-center gap-4 h-full hover:bg-gray-100 text-[#5B5B5B]"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  stroke-width="2"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -548,18 +684,20 @@
                     d="M6 6h.008v.008H6V6z"
                   />
                 </svg>
-                <p>Promotions</p>
+                <p class="font-semibold text-sm">Promotions</p>
               </li>
 
               <!-- for updates mail -->
-              <li>
+              <li
+                class="w-60 px-5 cursor-pointer flex items-center gap-4 h-full hover:bg-gray-100 text-[#5B5B5B]"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  stroke-width="2"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5"
                 >
                   <path
                     stroke-linecap="round"
@@ -567,36 +705,138 @@
                     d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
                   />
                 </svg>
-                <p>Updates</p>
+                <p class="font-semibold text-sm">Updates</p>
               </li>
             </ul>
 
             <!-- for displaying recieved mails -->
-            <ul>
-              <li>
-                <input type="checkbox" />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+            <ul
+              class="bg-[#F2F6FC] divide-y-[1.5px] divide-gray-200 overflow-y-scroll"
+            >
+              <li
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+              >
+                <div class="flex items-center gap-3 text-gray-400">
+                  <input type="checkbox" />
+                  <div class="text-gray-400 group-hover:text-black">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </div>
+
+                  <img
+                    class="w-6"
+                    src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_fill_googyellow500_20dp.png"
+                    alt="important tag"
                   />
-                </svg>
-                <img
-                  src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_fill_googyellow500_20dp.png"
-                  alt="important tag"
-                />
-                <h4>iNeuron</h4>
-                <div>
-                  <p>Important mail for 2 step verification</p>
-                  <p>15:00</p>
+                  <h4 class="text-black">iNeuron</h4>
+                </div>
+
+                <div class="flex items-center gap-5 relative w-full">
+                  <p class="w-[85%] line-clamp-1">
+                    Important mail for 2 step verification cccccccccccccc
+                    ccccccccccccccc ccccccc ccccccccccc
+                  </p>
+                  <p
+                    class="absolute right-1 text-gray-400 font-semibold text-sm"
+                  >
+                    15:00
+                  </p>
+                </div>
+              </li>
+              <li
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+              >
+                <div class="flex items-center gap-3 text-gray-400">
+                  <input type="checkbox" />
+                  <div class="text-gray-400 group-hover:text-black">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </div>
+
+                  <img
+                    class="w-6"
+                    src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_fill_googyellow500_20dp.png"
+                    alt="important tag"
+                  />
+                  <h4 class="text-black">iNeuron</h4>
+                </div>
+
+                <div class="flex items-center gap-5 relative w-full">
+                  <p class="w-[85%] line-clamp-1">
+                    Important mail for 2 step verification cccccccccccccc
+                    ccccccccccccccc ccccccc ccccccccccc
+                  </p>
+                  <p
+                    class="absolute right-1 text-gray-400 font-semibold text-sm"
+                  >
+                    15:00
+                  </p>
+                </div>
+              </li>
+              <li
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+              >
+                <div class="flex items-center gap-3 text-gray-400">
+                  <input type="checkbox" />
+                  <div class="text-gray-400 group-hover:text-black">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </div>
+
+                  <img
+                    class="w-6"
+                    src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/2x/label_important_fill_googyellow500_20dp.png"
+                    alt="important tag"
+                  />
+                  <h4 class="text-black">iNeuron</h4>
+                </div>
+
+                <div class="flex items-center gap-5 relative w-full">
+                  <p class="w-[85%] line-clamp-1">
+                    Important mail for 2 step verification cccccccccccccc
+                    ccccccccccccccc ccccccc ccccccccccc
+                  </p>
+                  <p
+                    class="absolute right-1 text-gray-400 font-semibold text-sm"
+                  >
+                    15:00
+                  </p>
                 </div>
               </li>
             </ul>
