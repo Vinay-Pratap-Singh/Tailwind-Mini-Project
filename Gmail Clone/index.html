@@ -503,9 +503,9 @@
         </header>
 
         <!-- for displaying mails and right side menu options -->
-        <main class="grid grid-cols-[auto_50px] rounded-xl">
+        <main class="grid grid-cols-[auto_50px] rounded-xl bg-red-300">
           <!-- for displaying the mails -->
-          <section class="bg-white overflow-hidden">
+          <section class="bg-white overflow-hidden bg-green-200 h-full">
             <!-- for display mails header option buttons -->
             <section class="px-5 flex items-center justify-between h-14">
               <!-- mail header left section -->
@@ -714,8 +714,9 @@
               class="bg-[#F2F6FC] divide-y-[1.5px] divide-gray-200 overflow-y-scroll"
             >
               <li
-                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group relative"
               >
+                <!-- for mail info -->
                 <div class="flex items-center gap-3 text-gray-400">
                   <input type="checkbox" />
                   <div class="text-gray-400 group-hover:text-black">
@@ -743,6 +744,7 @@
                   <h4 class="text-black">iNeuron</h4>
                 </div>
 
+                <!-- for mail message and time -->
                 <div class="flex items-center gap-5 relative w-full">
                   <p class="w-[85%] line-clamp-1">
                     Important mail for 2 step verification cccccccccccccc
@@ -753,11 +755,89 @@
                   >
                     15:00
                   </p>
+                </div>
+
+                <!-- for mail hover buttons options -->
+                <div
+                  class="flex items-center gap-3 hidden absolute right-2 z-10 group-hover:flex group-hover:bg-[#F2F6FC]"
+                >
+                  <!-- for download button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for delete button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for mail button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for snooze button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </li>
               <li
-                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group relative"
               >
+                <!-- for mail info -->
                 <div class="flex items-center gap-3 text-gray-400">
                   <input type="checkbox" />
                   <div class="text-gray-400 group-hover:text-black">
@@ -785,6 +865,7 @@
                   <h4 class="text-black">iNeuron</h4>
                 </div>
 
+                <!-- for mail message and time -->
                 <div class="flex items-center gap-5 relative w-full">
                   <p class="w-[85%] line-clamp-1">
                     Important mail for 2 step verification cccccccccccccc
@@ -795,11 +876,89 @@
                   >
                     15:00
                   </p>
+                </div>
+
+                <!-- for mail hover buttons options -->
+                <div
+                  class="flex items-center gap-3 hidden absolute right-2 z-10 group-hover:flex group-hover:bg-[#F2F6FC]"
+                >
+                  <!-- for download button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for delete button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for mail button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for snooze button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </li>
               <li
-                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group"
+                class="px-5 py-2 flex items-center gap-40 cursor-pointer hover:shadow hover:shadow-gray-400 group relative"
               >
+                <!-- for mail info -->
                 <div class="flex items-center gap-3 text-gray-400">
                   <input type="checkbox" />
                   <div class="text-gray-400 group-hover:text-black">
@@ -827,6 +986,7 @@
                   <h4 class="text-black">iNeuron</h4>
                 </div>
 
+                <!-- for mail message and time -->
                 <div class="flex items-center gap-5 relative w-full">
                   <p class="w-[85%] line-clamp-1">
                     Important mail for 2 step verification cccccccccccccc
@@ -837,6 +997,83 @@
                   >
                     15:00
                   </p>
+                </div>
+
+                <!-- for mail hover buttons options -->
+                <div
+                  class="flex items-center gap-3 hidden absolute right-2 z-10 group-hover:flex group-hover:bg-[#F2F6FC]"
+                >
+                  <!-- for download button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for delete button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for mail button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- for snooze button -->
+                  <div class="hover:bg-gray-200 p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="w-[1.2rem] h-[1.2rem]"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -844,44 +1081,53 @@
 
           <!-- for right side menu options -->
           <div>
+            <!-- for other apps icon -->
             <ul>
               <li>
                 <img
+                  class="w-6"
                   src="https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png"
                   alt="calender"
                 />
               </li>
               <li>
                 <img
+                  class="w-6"
                   src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png"
                   alt="notes"
                 />
               </li>
               <li>
                 <img
+                  class="w-6"
                   src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png"
                   alt="tasks"
                 />
               </li>
               <li>
                 <img
+                  class="w-6"
                   src="https://www.gstatic.com/companion/icon_assets/contacts_2022_2x.png"
                   alt="contacts"
                 />
               </li>
             </ul>
 
+            <!-- for google meet and more -->
             <ul>
               <img
+                class="w-6"
                 src="https://lh3.googleusercontent.com/pw/AM-JKLUkiyTEgH-6DiQP85RGtd_BORvAuFnS9katNMgwYQBJUTiDh12qtQxMJFWYH2Dj30hNsNUrr-kzKMl7jX-Qd0FR7JmVSx-Fhruf8xTPPI-wdsMYez6WJE7tz7KmqsORKBEnBTiILtMJXuMvphqKdB9X=s128-no"
                 alt="google meet"
               />
               <img
+                class="w-6"
                 src="https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png"
                 alt="get add ons"
               />
             </ul>
 
+            <!-- for carret symbol -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
