@@ -4,6 +4,304 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube UI Clone</title>
+    <!-- adding the tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- container for the youtube ui -->
+    <div>
+      <!-- for header navigation -->
+      <header>
+        <!-- for menu icon -->
+        <div class="w-5">
+          <div style="width: 100%; height: 100%; fill: currentcolor">
+            <svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- for youtube logo -->
+        <img src="./assets/youtubeLogo.svg" alt="logo" />
+
+        <!-- for search bar section -->
+        <div>
+          <!-- for search bar -->
+          <div>
+            <input type="text" placeholder="Search" />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- mic button -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- for right section of header -->
+        <div>
+          <!-- for create video -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+              />
+            </svg>
+          </div>
+
+          <!-- for notification bell -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+              />
+            </svg>
+            <p>1</p>
+          </div>
+
+          <!-- for profile -->
+          <div>
+            <img
+              src="https://yt3.ggpht.com/mECcclyG_DGHz_SqlgVht917Neqrt9yviaFPBTLE8Ty5eblZpIAazql1nki2QVZeOiABJaHzhg=s88-c-k-c0x00ffffff-no-rj"
+              alt="profile image"
+            />
+          </div>
+        </div>
+      </header>
+
+      <!-- left sidebar -->
+      <ul>
+        <!-- for home icon -->
+        <li class="w-5">
+          <div style="width: 100%; height: 100%; fill: currentcolor">
+            <svg
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <g>
+                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+              </g>
+            </svg>
+          </div>
+          <p>Home</p>
+        </li>
+
+        <!-- for shorts icon -->
+        <li class="w-5">
+          <div style="width: 100%; height: 100%; fill: currentcolor">
+            <svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+              ></path>
+            </svg>
+          </div>
+          <p>Shorts</p>
+        </li>
+
+        <!-- for subscription -->
+        <li class="w-5">
+          <div style="width: 100%; height: 100%; fill: currentcolor">
+            <svg
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
+              ></path>
+            </svg>
+          </div>
+          <p>Subscriptions</p>
+        </li>
+
+        <!-- for library -->
+        <li class="w-5">
+          <div style="width: 100%; height: 100%; fill: currentcolor">
+            <svg
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"
+              ></path>
+            </svg>
+          </div>
+          <p>Library</p>
+        </li>
+      </ul>
+
+      <!-- for main content -->
+      <main>
+        <!-- for main content category options -->
+        <ul>
+          <li>All</li>
+          <li>React router</li>
+          <li>Web development</li>
+          <li>Lectures</li>
+          <li>AI</li>
+          <li>Music</li>
+          <li>Algorithm</li>
+          <li>Live</li>
+          <li>Satsang</li>
+          <li>Live</li>
+          <li>Bollywood</li>
+          <li>Hindi music</li>
+          <!-- for arrow -->
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </li>
+        </ul>
+
+        <!-- for video section -->
+        <section>
+          <!-- card for video -->
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/iPGXk-i-VYU?si=SqiYLzjgwXPOXmwO"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <!-- for ard header details -->
+            <div>
+              <h2>NextJS full stack course</h2>
+              <!-- button for more options -->
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h4>Hitesh Choudhary</h4>
+            <!-- for card description -->
+            <div>
+              100K views
+              <div></div>
+              10 days ago
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
