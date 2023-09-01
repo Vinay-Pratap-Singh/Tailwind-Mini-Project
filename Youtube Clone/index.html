@@ -7,9 +7,9 @@
     <!-- adding the tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#FFFFFF]">
+  <body class="bg-[#FFFFFF] h-screen">
     <!-- for header navigation -->
-    <header class="flex items-center justify-between mx-4 py-1">
+    <header class="flex items-center justify-between mx-4 py-1 h-[10vh]">
       <!-- for menu and youtube logo -->
       <div class="flex items-center gap-5">
         <!-- for menu icon -->
@@ -138,7 +138,7 @@
     </header>
 
     <!-- for main content -->
-    <main class="flex items-start gap-10">
+    <main class="flex items-start gap-10 h-[90vh] overflow-hidden">
       <!-- left sidebar -->
       <ul class="flex flex-col mx-1">
         <!-- for home icon -->
@@ -246,7 +246,7 @@
       </ul>
 
       <!-- for videos content -->
-      <section class="space-y-10 pt-4 w-full">
+      <section class="flex flex-col gap-5 pt-4 w-full h-full">
         <!-- for videos content category options -->
         <ul
           class="flex items-center gap-2 overflow-x-hidden text-[0.9rem] font-medium"
@@ -310,15 +310,387 @@
         </ul>
 
         <!-- for video section -->
-        <section class="">
+        <section
+          class="h-full w-full overflow-y-scroll flex items-center gap-x-5 gap-y-10 flex-wrap pb-5 self-start"
+        >
           <!-- card for video -->
-          <div class="w-[400px] cursor-pointer group">
+          <div class="w-[350px] cursor-pointer group">
             <!-- for video thumbnail -->
             <div class="relative">
               <iframe
                 class="rounded-xl"
                 width="100%"
-                height="220"
+                height="200"
+                src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p
+                class="absolute bottom-1 right-1 px-1 py-[1px] rounded-md bg-black text-white text-xs font-semibold"
+              >
+                01:25:30
+              </p>
+            </div>
+
+            <!-- for card header details -->
+            <div class="flex items-center gap-3 mt-1">
+              <!-- channel logo -->
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full shadow-sm self-start"
+              >
+                <img
+                  src="https://yt3.ggpht.com/RyeP9L6S_rfuxMCcs9OnWaODqDpgSi9NyzQTtT_aSXIvdoe1jBuVr7kPBvsZJB6T3EEKQWlTnw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel logo"
+                />
+              </div>
+
+              <!-- for card details right side -->
+              <div class="w-full">
+                <!-- for video heading -->
+                <div class="w-full flex items-center justify-between">
+                  <h2 class="text-lg font-semibold line-clamp-2">
+                    The complete guide to OOPs concepts
+                  </h2>
+                  <!-- button for more options -->
+                  <button class="hidden group-hover:block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.8"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="text-gray-600 text-sm font-semibold">
+                  PW Skills Tech
+                </h4>
+                <!-- for card description -->
+                <div
+                  class="text-gray-500 text-sm font-semibold flex items-center gap-2"
+                >
+                  100K views
+                  <!-- div for dot -->
+                  <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                  10 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card for video -->
+          <div class="w-[350px] cursor-pointer group">
+            <!-- for video thumbnail -->
+            <div class="relative">
+              <iframe
+                class="rounded-xl"
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p
+                class="absolute bottom-1 right-1 px-1 py-[1px] rounded-md bg-black text-white text-xs font-semibold"
+              >
+                01:25:30
+              </p>
+            </div>
+
+            <!-- for card header details -->
+            <div class="flex items-center gap-3 mt-1">
+              <!-- channel logo -->
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full shadow-sm self-start"
+              >
+                <img
+                  src="https://yt3.ggpht.com/RyeP9L6S_rfuxMCcs9OnWaODqDpgSi9NyzQTtT_aSXIvdoe1jBuVr7kPBvsZJB6T3EEKQWlTnw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel logo"
+                />
+              </div>
+
+              <!-- for card details right side -->
+              <div class="w-full">
+                <!-- for video heading -->
+                <div class="w-full flex items-center justify-between">
+                  <h2 class="text-lg font-semibold line-clamp-2">
+                    The complete guide to OOPs concepts
+                  </h2>
+                  <!-- button for more options -->
+                  <button class="hidden group-hover:block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.8"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="text-gray-600 text-sm font-semibold">
+                  PW Skills Tech
+                </h4>
+                <!-- for card description -->
+                <div
+                  class="text-gray-500 text-sm font-semibold flex items-center gap-2"
+                >
+                  100K views
+                  <!-- div for dot -->
+                  <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                  10 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card for video -->
+          <div class="w-[350px] cursor-pointer group">
+            <!-- for video thumbnail -->
+            <div class="relative">
+              <iframe
+                class="rounded-xl"
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p
+                class="absolute bottom-1 right-1 px-1 py-[1px] rounded-md bg-black text-white text-xs font-semibold"
+              >
+                01:25:30
+              </p>
+            </div>
+
+            <!-- for card header details -->
+            <div class="flex items-center gap-3 mt-1">
+              <!-- channel logo -->
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full shadow-sm self-start"
+              >
+                <img
+                  src="https://yt3.ggpht.com/RyeP9L6S_rfuxMCcs9OnWaODqDpgSi9NyzQTtT_aSXIvdoe1jBuVr7kPBvsZJB6T3EEKQWlTnw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel logo"
+                />
+              </div>
+
+              <!-- for card details right side -->
+              <div class="w-full">
+                <!-- for video heading -->
+                <div class="w-full flex items-center justify-between">
+                  <h2 class="text-lg font-semibold line-clamp-2">
+                    The complete guide to OOPs concepts
+                  </h2>
+                  <!-- button for more options -->
+                  <button class="hidden group-hover:block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.8"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="text-gray-600 text-sm font-semibold">
+                  PW Skills Tech
+                </h4>
+                <!-- for card description -->
+                <div
+                  class="text-gray-500 text-sm font-semibold flex items-center gap-2"
+                >
+                  100K views
+                  <!-- div for dot -->
+                  <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                  10 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card for video -->
+          <div class="w-[350px] cursor-pointer group">
+            <!-- for video thumbnail -->
+            <div class="relative">
+              <iframe
+                class="rounded-xl"
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p
+                class="absolute bottom-1 right-1 px-1 py-[1px] rounded-md bg-black text-white text-xs font-semibold"
+              >
+                01:25:30
+              </p>
+            </div>
+
+            <!-- for card header details -->
+            <div class="flex items-center gap-3 mt-1">
+              <!-- channel logo -->
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full shadow-sm self-start"
+              >
+                <img
+                  src="https://yt3.ggpht.com/RyeP9L6S_rfuxMCcs9OnWaODqDpgSi9NyzQTtT_aSXIvdoe1jBuVr7kPBvsZJB6T3EEKQWlTnw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel logo"
+                />
+              </div>
+
+              <!-- for card details right side -->
+              <div class="w-full">
+                <!-- for video heading -->
+                <div class="w-full flex items-center justify-between">
+                  <h2 class="text-lg font-semibold line-clamp-2">
+                    The complete guide to OOPs concepts
+                  </h2>
+                  <!-- button for more options -->
+                  <button class="hidden group-hover:block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.8"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="text-gray-600 text-sm font-semibold">
+                  PW Skills Tech
+                </h4>
+                <!-- for card description -->
+                <div
+                  class="text-gray-500 text-sm font-semibold flex items-center gap-2"
+                >
+                  100K views
+                  <!-- div for dot -->
+                  <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                  10 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card for video -->
+          <div class="w-[350px] cursor-pointer group">
+            <!-- for video thumbnail -->
+            <div class="relative">
+              <iframe
+                class="rounded-xl"
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p
+                class="absolute bottom-1 right-1 px-1 py-[1px] rounded-md bg-black text-white text-xs font-semibold"
+              >
+                01:25:30
+              </p>
+            </div>
+
+            <!-- for card header details -->
+            <div class="flex items-center gap-3 mt-1">
+              <!-- channel logo -->
+              <div
+                class="flex items-center justify-center w-12 h-12 rounded-full shadow-sm self-start"
+              >
+                <img
+                  src="https://yt3.ggpht.com/RyeP9L6S_rfuxMCcs9OnWaODqDpgSi9NyzQTtT_aSXIvdoe1jBuVr7kPBvsZJB6T3EEKQWlTnw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel logo"
+                />
+              </div>
+
+              <!-- for card details right side -->
+              <div class="w-full">
+                <!-- for video heading -->
+                <div class="w-full flex items-center justify-between">
+                  <h2 class="text-lg font-semibold line-clamp-2">
+                    The complete guide to OOPs concepts
+                  </h2>
+                  <!-- button for more options -->
+                  <button class="hidden group-hover:block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.8"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="text-gray-600 text-sm font-semibold">
+                  PW Skills Tech
+                </h4>
+                <!-- for card description -->
+                <div
+                  class="text-gray-500 text-sm font-semibold flex items-center gap-2"
+                >
+                  100K views
+                  <!-- div for dot -->
+                  <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                  10 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card for video -->
+          <div class="w-[350px] cursor-pointer group">
+            <!-- for video thumbnail -->
+            <div class="relative">
+              <iframe
+                class="rounded-xl"
+                width="100%"
+                height="200"
                 src="https://www.youtube.com/embed/TZGuBSoDo2Y?si=HZHZK--eb6rfqRWe"
                 title="YouTube video player"
                 frameborder="0"
