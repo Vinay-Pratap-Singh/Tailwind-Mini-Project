@@ -385,48 +385,118 @@
 
     <!-- for slack and team stats details -->
     <section>
-      <div>
-        <h1>Teams large and small rely on Slack</h1>
-        <p>
+      <div class="flex flex-col items-center gap-5 relative pt-28">
+        <h1 class="text-5xl font-bold">Teams large and small rely on Slack</h1>
+        <p class="text-lg font-medium">
           Slack securely scales up to support collaboration at the world’s
           biggest companies.
         </p>
-        <div>
-          <button>MEET SLACK FOR ENTERPRISE</button>
-          <button>TALK TO SALES</button>
+        <div class="space-x-1">
+          <button
+            class="border-[1.5px] border-[#541554] bg-[#541554] text-white rounded-md py-3 px-8 font-bold text-[0.95rem]"
+          >
+            MEET SLACK FOR ENTERPRISE
+          </button>
+          <button
+            class="border-[1.5px] border-[#541554] bg-white text-[#541554] rounded-md py-3 px-8 font-bold text-[0.95rem]"
+          >
+            TALK TO SALES
+          </button>
+        </div>
+
+        <!-- for small icons -->
+        <div class="absolute top-10 left-36">
+          <img
+            class="w-24"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-office-building@2x.png"
+            alt="building"
+          />
+        </div>
+        <div class="absolute top-10 right-28">
+          <img
+            class="w-20"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-skyline@2x.png"
+            alt="marketing"
+          />
+        </div>
+        <div class="absolute top-[50%] left-20">
+          <img
+            class="w-20"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-chart-upward-trend@2x.png"
+            alt="stats"
+          />
+        </div>
+        <div class="absolute top-[50%] right-36">
+          <img
+            class="w-20"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-handshake@2x.png"
+            alt="hand"
+          />
+        </div>
+        <div class="absolute bottom-0 left-40">
+          <img
+            class="w-20"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-lock@2x.png"
+            alt="lock"
+          />
+        </div>
+        <div class="absolute bottom-0 right-20">
+          <img
+            class="w-24"
+            src="https://a.slack-edge.com/7460822/marketing/img/homepage/e2e-prospects/emoji/emoji-woman-technologist@2x.png"
+            alt="girl"
+          />
         </div>
       </div>
 
       <!-- for stats -->
-      <div>
-        <div>
-          <h2>85%</h2>
-          <p>of users say that Slack has improved communication*</p>
+      <div class="flex items-center justify-evenly my-24">
+        <div class="w-44 space-y-3">
+          <h2 class="text-6xl font-bold text-[#541554]">85%</h2>
+          <p class="font-semibold text-sm">
+            of users say that Slack has improved communication*
+          </p>
         </div>
-        <div>
-          <h2>86%</h2>
-          <p>feel that their ability to work remotely has improved*</p>
+        <div class="w-44 space-y-3">
+          <h2 class="text-6xl font-bold text-[#541554]">86%</h2>
+          <p class="font-semibold text-sm">
+            feel that their ability to work remotely has improved*
+          </p>
         </div>
-        <div>
-          <h2>88%</h2>
-          <p>feel more connected to their teams*</p>
+        <div class="w-44 space-y-3">
+          <h2 class="text-6xl font-bold text-[#541554]">88%</h2>
+          <p class="font-semibold text-sm">
+            feel more connected to their teams*
+          </p>
         </div>
       </div>
 
       <!-- for testimonial video -->
-      <section>
+      <section class="flex items-center gap-10">
         <video
+          autoplay
+          loop
+          muted
           src="https://a.slack-edge.com/1b4e2a3/marketing/img/homepage/true-prospects/customer-showcase/Vodafone_08.mp4"
+          class="w-[45%] rounded-tr-full rounded-br-full"
         ></video>
-        <div>
-          <h1>
+
+        <div class="flex flex-col gap-5 pr-10">
+          <h1 class="text-3xl italic">
             ‘Many technology employees were gravitating naturally to Slack. So
             we followed our users to what has become one of our most important
             tools.’
           </h1>
-          <h4>Matt Beal</h4>
-          <p>Director of Technology Strategy and Architecture, Vodafone</p>
-          <a href="#">
+          <div>
+            <h4 class="font-bold">Matt Beal</h4>
+            <p class="font-semibold">
+              Director of Technology Strategy and Architecture, Vodafone
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-lg text-[#1264A3] flex items-center gap-2 font-semibold hover:underline"
+          >
             See more customer stories
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -447,7 +517,7 @@
       </section>
 
       <!-- note for data justification -->
-      <p>
+      <p class="mt-20 text-center text-sm text-gray-600 font-medium mb-5">
         * Weighted average. Based on 2,707 survey responses from weekly Slack
         users in the US, UK, Australia and Canada with a ± 2% margin of error at
         95% CI (December 2021).
